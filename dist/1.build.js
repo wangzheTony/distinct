@@ -1,10 +1,10 @@
 webpackJsonp([1],{
 
-/***/ 72:
+/***/ 76:
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = {
-	    template: __webpack_require__(73),
+	    template: __webpack_require__(77),
 	    replace: true,
 	    data: function(){
 	        return {
@@ -14,39 +14,39 @@ webpackJsonp([1],{
 	        }
 	    },
 	    components: {
-	        'app-header': __webpack_require__(74),
-	        'app-footer': __webpack_require__(78),
+	        'app-header': __webpack_require__(78),
+	        'app-footer': __webpack_require__(72),
 	    }
 	}
 
 /***/ },
 
-/***/ 73:
+/***/ 77:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"view\" v-transition>\n    <app-header title='{{ title }}' msg='{{ msg }}'></app-header>\n    \n    <div>\n        1. 查阅相关资料文档，提高平时开发速度\n    </div>\n\n</div>";
 
 /***/ },
 
-/***/ 74:
+/***/ 78:
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(75);
+	__webpack_require__(79);
 
 	module.exports = {
-	    template: __webpack_require__(77),
+	    template: __webpack_require__(81),
 	    props: ['title', 'msg']
 	}
 
 /***/ },
 
-/***/ 75:
+/***/ 79:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(76);
+	var content = __webpack_require__(80);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -55,8 +55,8 @@ webpackJsonp([1],{
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./../../../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../../../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -67,7 +67,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 76:
+/***/ 80:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -82,10 +82,10 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 77:
+/***/ 81:
 /***/ function(module, exports) {
 
-	module.exports = "<h3>{{ title }}</h3>\n<p class=\"info\">{{ msg }}</p>";
+	module.exports = "<!-- <h3>{{ title }}</h3> -->\n<div class=\"alert alert-info\">{{ msg }}</div>";
 
 /***/ }
 

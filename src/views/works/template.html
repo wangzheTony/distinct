@@ -3,22 +3,10 @@
     
     <div class="table">
         <ul>
-            <li>
-                <span>1. 预付卡项目</span>
-                <a href="http://m-test.yaochufa.com/prepay/index/index">http://m-test.yaochufa.com/prepay/index/index</a>
+            <li v-for="item in works">
+                <span>{{item.id}}. {{item.title}}</span>
+                <a href="{{item.url}}">{{item.url}}</a>
             </li>
-            <li>
-                <span>2. 游记／攻略</span>
-                <a href="http://m-test.yaochufa.com/youji/list">http://m-test.yaochufa.com/youji/list</a>
-            </li>
-            <li>
-                <span>3. 亲子游</span>
-                <a href="http://m-test.yaochufa.com/familytrip/index">http://m-test.yaochufa.com/familytrip/index</a>
-            </li>
-            <li></li>
-            <li></li>
         </ul>
     </div>
-
-    <app-footer footercontent='{{{ footer_content }}}'></app-footer>
 </div>

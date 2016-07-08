@@ -107,18 +107,18 @@
 	    },
 	    components: {
 	        'main': function(resolve){
-	            __webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(72)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
+	            __webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(76)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
 	        },
 	        'document': function(resolve){
 	            __webpack_require__.e/* require */(2, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(82)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
 	        },
 	        'works': function(resolve){
-	            __webpack_require__.e/* require */(3, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(84)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
+	            __webpack_require__.e/* require */(3, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(86)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
 	        },
 	        'resumes': function(resolve){
-	            __webpack_require__.e/* require */(4, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(86)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
+	            __webpack_require__.e/* require */(4, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(88)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this))
 	        },
-	        'app-footer': __webpack_require__(78),
+	        'app-footer': __webpack_require__(72),
 	    }
 	})
 
@@ -146,8 +146,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./base.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./base.css");
+			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./base.css", function() {
+				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./base.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -165,7 +165,7 @@
 
 
 	// module
-	exports.push([module.id, "html, body {\n    height: 100%;\n    font-family: Helvetica, Arial, sans-serif;\n}\n\n#app {\n    height: 100%;\n    margin: 0 20px;\n}\n.title { font-size: 15px; font-weight: 600;padding: 15px; }\n\n\n.view {\n    transition: all .2s ease;\n    position: absolute;\n    width: 90%;\n    height: 500px;\n    overflow: scroll;\n    /*bottom: 60px;*/\n}\n.v-enter {\n    opacity: 0;\n    transform: translate3d(100px, 0, 0);\n    -webkit-transform: translate3d(100px, 0,0);\n}\n.v-leave {\n    opacity: 0;\n    transform: translate3d(-100px, 0, 0);\n    -webkit-transform: translate3d(-100px, 0,0);\n}", ""]);
+	exports.push([module.id, "html, body {\n    height: 100%;\n    font-family: Helvetica, Arial, sans-serif;\n}\n\n#app {\n    height: 100%;\n    margin: 0 20px;\n}\n.title { font-size: 15px; font-weight: 600;padding: 15px; }\n\n\n.view {\n    transition: all .2s ease;\n    position: absolute;\n    width: 90%;\n    /*height: 500px;*/\n    overflow-y: scroll;\n    border: 0px solid;\n    /*bottom: 60px;*/\n}\n.v-enter {\n    opacity: 0;\n    transform: translate3d(100px, 0, 0);\n    -webkit-transform: translate3d(100px, 0,0);\n}\n.v-leave {\n    opacity: 0;\n    transform: translate3d(-100px, 0, 0);\n    -webkit-transform: translate3d(-100px, 0,0);\n}", ""]);
 
 	// exports
 
@@ -10738,30 +10738,24 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ },
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(79);
+	__webpack_require__(73);
 
 	module.exports = {
-	    template: __webpack_require__(81),
+	    template: __webpack_require__(75),
 	    props: ['footercontent']
 	}
 
 /***/ },
-/* 79 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(80);
+	var content = __webpack_require__(74);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -10770,8 +10764,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./../../../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../../../node_modules/.npminstall/css-loader/0.22.0/css-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10781,7 +10775,7 @@
 	}
 
 /***/ },
-/* 80 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -10789,16 +10783,16 @@
 
 
 	// module
-	exports.push([module.id, ".footer_content {\n    position: absolute;\n    left: 25%;\n    bottom: 0;\n    width: 50%;\n    height: 20px;\n    line-height: 20px;\n    text-align: center;\n    margin: 10px auto;\n    font-size: 13px;\n    color: blue;\n}", ""]);
+	exports.push([module.id, ".footer_content {\n    position: absolute;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    /*height: 20px;*/\n    /*line-height: 20px;*/\n    text-align: center;\n    /*margin: 10px auto;*/\n    font-size: 13px;\n    /*color: blue;*/\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 81 */
+/* 75 */
 /***/ function(module, exports) {
 
-	module.exports = "<p class=\"footer_content\">{{{ footercontent }}}</p>";
+	module.exports = "<div class=\"alert alert-danger footer_content\">{{{ footercontent }}}</div>";
 
 /***/ }
 /******/ ]);
