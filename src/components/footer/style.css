@@ -1,0 +1,12 @@
+.footer_content {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 13px;
+    color: blue;
+}

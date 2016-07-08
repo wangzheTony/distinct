@@ -1,0 +1,28 @@
+{
+  "name": "distinct",
+  "version": "1.0.0",
+  "description": "王哲的个人网站，包括各种封装api，作品，简历等",
+  "main": "src/app.js",
+  "devDependencies": {
+    "css-loader": "^0.22.0",
+    "html-loader": "^0.3.0",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "stylus-loader": "^1.2.1",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --quiet",
+    "build": "webpack -p"
+  },
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
+  "author": "Simon 王哲",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^0.12.10"
+  }
+}

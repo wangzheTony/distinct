@@ -1,0 +1,14 @@
+.table {
+
+}
+
+.table li {
+    display: block;
+}
+
+.header {
+    width: 25px;
+    height: 25px;
+    border: 0 solid;
+    border-radius: 50px;
+}

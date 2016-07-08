@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文档说明</title>
+</head>
+<body>
+    <div id="app">
+        <header class="title">{{ title }}</header>
+        <div class="nav">
+            <a href="#main">前言</a>
+            <a href="#document">API 文档</a>
+            <a href="#works">个人作品</a>
+            <a href="#resumes">个人简历</a>
+        </div>
+        <component is="{{ view }}"></component>
+
+        <app-footer footercontent='{{{ footer_content }}}'></app-footer>
+    </div>
+
+
+    <script type="text/javascript" src="dist/build.js"></script>
+</body>
+</html>
